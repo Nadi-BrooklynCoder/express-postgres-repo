@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Colors App!');
 });
 
+// Ensure this is the last route
 app.get('*', (req, res) => {
     res.status(404).send("Page not found");
 });
